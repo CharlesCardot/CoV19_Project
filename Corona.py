@@ -25,7 +25,7 @@ item2 = (item[10].split('['))
 item3 = item2[1].split(',')
 
 goal = []
-print(len(item3))
+#print(len(item3))
 for i in range(len(item3)):
     if(i == 0):
         ignore = True
@@ -80,7 +80,15 @@ def test_func(x, m, b):
 params, params_covariance = optimize.curve_fit(test_func, x, y, p0=[1, 1])
 #pprint.pprint(params)
 expec = params[1]/(-1 * params[0]) - len(x)
-pprint.pprint("Expected Number of Days remaining: " + str(expec))
+str1 = "Expected Number of Days remaining: " + str(expec)
+print(str1)
 
 end_date = datetime.date.today() + datetime.timedelta(days=expec)
-print("Expected End Date: " + str(end_date))
+str2 = "Expected End Date: " + str(end_date)
+print(str2)
+
+file1 = open("Corona.txt","w") 
+L = [str1 + " \n", str2 + " \n"] 
+file1.writelines(L) 
+file1.close()
+
