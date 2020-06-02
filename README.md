@@ -9,5 +9,8 @@ The output of the python script is the predicted number of days remianing and th
 
 # UPDATE
 Previously a manually updated csv file was used, but due to the tedium of manually checking daily updates on the worldometer website a webscraper using beautifulsoup has
-been implimented to automatically pull the information from the worldometer website.
+been implimented to automatically pull the information from the worldometer website. 
+
+# UPDATE 2 (06/02/2020)
+Now contains executable file and webscraping code has been changed to fit worldometer's updated HTML.
 

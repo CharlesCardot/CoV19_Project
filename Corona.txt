@@ -1,2 +1,2 @@
-Expected Number of Days remaining: 111.85951623034813 
-Expected End Date: 2020-09-07 
+Expected Number of Days remaining: 100.12114176726851 
+Expected End Date: 2020-09-10 

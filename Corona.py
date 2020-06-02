@@ -21,7 +21,9 @@ sum = list(soup.children)[11]
 sum = list(sum.children)[3]
 listacle = soup.find_all('script')
 item = (str(listacle[23]).split('{'))
-item2 = (item[10].split('['))
+print(item)
+item2 = (item[15].split('['))
+print(item2)
 item3 = item2[1].split(',')
 
 goal = []
